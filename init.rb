@@ -1,8 +1,11 @@
+# coding: utf-8
+require "bravo_hooks"
+
 Redmine::Plugin.register :redmine_bravo do
   name 'Redmine Bravo plugin'
-  author 'Author name'
-  description 'This is a plugin for Redmine'
+  author 'pinzolo'
+  description 'This is a plugin of Redmine that provides function like "Facebook like"'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  url 'https://github.com/pinzolo/redmine_bravo'
+  author_url 'https://github.com/pinzolo'
 end
