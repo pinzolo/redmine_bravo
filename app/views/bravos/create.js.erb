@@ -1,0 +1,5 @@
+<% if @success %>
+  //jQuery("#bravo-<%= "#{@bravo.target_type}-#{@bravo.target_id}" %>").html("<%= bravo_mark(@bravo.journal) %>")
+  jQuery("#bravo-<%= "#{@bravo.target_type}-#{@bravo.target_id}" %>").html("hoge");
+<% end %>
+
