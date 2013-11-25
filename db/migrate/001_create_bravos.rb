@@ -1,9 +1,12 @@
+# coding: utf-8
 class CreateBravos < ActiveRecord::Migration
   def change
     create_table :bravos do |t|
-      t.integer :target_id
+      t.integer :target_id, :null => false
+      t.string :target_type, :null => false
       t.integer :user_id
-      t.string :target_type
     end
+
+    add_index :bravos, [:target_id, :target_type]
   end
 end
